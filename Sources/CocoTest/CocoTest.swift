@@ -1,7 +1,7 @@
 
 import UIKit
 
-class CocoTest{
+public class CocoTest{
     
     /// Description
     /// - Warning: The ''#" symbol is removed while processing
@@ -9,7 +9,7 @@ class CocoTest{
     /// - hexString: the input string
     /// - alpha: optional alpha
     /// - Returns: returns a collor
-    class func colorFromHexString(_ hexString:String, alpha:CGFloat = 1.0) -> UIColor{
+   internal class func colorFromHexString(_ hexString:String, alpha:CGFloat = 1.0) -> UIColor{
         let r,g,b:CGFloat
         let offset = hexString.hasPrefix("#") ? 1:0
         let start = hexString.index(hexString.startIndex,offsetBy: offset)
@@ -28,5 +28,9 @@ class CocoTest{
     }
     
     
+    ///
+   public  static var cocoColor:UIColor{
+        return self.colorFromHexString("006736")
+    }
     
 }
