@@ -10,10 +10,16 @@ final class CocoTestTests: XCTestCase {
     func testRazeColorsAreEqual(){
         let color = CocoTest.colorFromHexString("006736")
         XCTAssertEqual(color, CocoTest.cocoColor)
-        
     }
+    
+    func testRazeSecondaryColorsAreEqual(){
+        let color = CocoTest.colorFromHexString("FCFFFD")
+        XCTAssertEqual(color, CocoTest.secondaryCocoColor)
+    }
+    
     static var allTests = [
         ("testColorRedEqual",testColorRedEqual),
-        ("testRazeColorsEqual",testRazeColorsAreEqual)
+        ("testRazeColorsEqual",testRazeColorsAreEqual),
+        ("testSecondaryRazeColorsEqual",testRazeSecondaryColorsAreEqual)
     ]
 }

@@ -1,8 +1,8 @@
 
 import UIKit
 
+
 public class CocoTest{
-    
     /// Description
     /// - Warning: The ''#" symbol is removed while processing
     /// - Parameters:
@@ -32,5 +32,9 @@ public class CocoTest{
    public  static var cocoColor:UIColor{
         return self.colorFromHexString("006736")
     }
+    
+    public  static var secondaryCocoColor:UIColor{
+         return self.colorFromHexString("FCFFFD")
+     }
     
 }
