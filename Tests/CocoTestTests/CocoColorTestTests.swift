@@ -1,20 +1,20 @@
 import XCTest
 @testable import CocoTest
 
-final class CocoTestTests: XCTestCase {
+final class CocoColorTestTests: XCTestCase {
     func testColorRedEqual(){
-        let color = CocoTest.colorFromHexString("FF0000")
+        let color = CocoTest.Color.fromHexString("FF0000")
         XCTAssertEqual(color, .red)
     }
     
     func testRazeColorsAreEqual(){
-        let color = CocoTest.colorFromHexString("006736")
-        XCTAssertEqual(color, CocoTest.cocoColor)
+        let color = CocoTest.Color.fromHexString("006736")
+        XCTAssertEqual(color, CocoTest.Color.cocoColor)
     }
     
     func testRazeSecondaryColorsAreEqual(){
-        let color = CocoTest.colorFromHexString("FCFFFD")
-        XCTAssertEqual(color, CocoTest.secondaryCocoColor)
+        let color = CocoTest.Color.fromHexString("FCFFFD")
+        XCTAssertEqual(color, CocoTest.Color.secondaryCocoColor)
     }
     
     static var allTests = [
